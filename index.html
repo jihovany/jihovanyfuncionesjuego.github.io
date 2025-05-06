@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Aprende Funciones Matemáticas!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>¿Qué función se aplicó?</h1>
+        <div class="question">
+            <p>Número inicial: <span id="input-number"></span></p>
+            <p>Número final: <span id="output-number"></span></p>
+            <p>¿Qué operación transforma el número inicial en el número final?</p>
+        </div>
+        <div class="options">
+            <button onclick="checkAnswer('+')">+</button>
+            <button onclick="checkAnswer('-')">-</button>
+            <button onclick="checkAnswer('*')">&times;</button>
+            <button onclick="checkAnswer('/')">&divide;</button>
+        </div>
+        <div class="result">
+            <p id="feedback"></p>
+            <p>Puntuación: <span id="score">0</span></p>
+        </div>
+        <button onclick="nextQuestion()">Siguiente Pregunta</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
